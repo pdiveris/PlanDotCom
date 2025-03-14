@@ -9,7 +9,7 @@ Both the Grid and the Player are React based and responsive. It has been built w
 - [Laravel 12](https://laravel.com/docs/12.x/releases)
 - [React 18](https://react.dev/blog/2022/03/29/react-v18)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [React Player](https://www.npmjs.com/package/react-player)
+- HTML5 Video
 
 In addition, it makes use of [Docker](http://docker.io) through Laravel Sail
 
