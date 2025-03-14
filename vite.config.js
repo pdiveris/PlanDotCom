@@ -4,15 +4,17 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-    plugins: [
-        laravel({
-            input: [
-                'resources/js/app.jsx',
-                'resources/css/app.css',
-            ],
-            refresh: true,
-        }),
-        react(),
-        tailwindcss(),
-    ],
-});
+        plugins: [
+            laravel({
+                input: [
+                    'resources/js/app.jsx',
+                    'resources/css/app.css',
+                ],
+                refresh: true,
+            }),
+            react(),
+            tailwindcss(),
+//            require('@material-tailwind/html').withMT(), // Import and use withMT()
+        ],
+    }
+);
