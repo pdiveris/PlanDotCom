@@ -30,7 +30,7 @@ class ApiController
     public function index(Request $request): JsonResponse
     {
         $q = $request->get('q', '');
-        
+
         if ($q <> '') {
             $ret = $this->videos->filter(function ($item) use ($q) {
                 return str_contains($item->title, $q);
