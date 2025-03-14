@@ -19,7 +19,7 @@ class ApiController
         );
 
         $this->videos = collect(
-          $data->videos
+            $data->videos
         );
     }
 
@@ -33,7 +33,8 @@ class ApiController
 
         if ($q <> '') {
             $ret = $this->videos->filter(function ($item) use ($q) {
-                return str_contains($item->title, $q);
+                return str_contains($item->title, $q) ||
+                    str_contains($item->description, $q);
             });
         } else {
             $ret = $this->videos;

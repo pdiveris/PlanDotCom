@@ -17,8 +17,14 @@ In addition, it makes use of [Docker](http://docker.io) through Laravel Sail
 Simply clone the rep into a folder, change dir to, e.g. `cd ./videogrid` and run `./vendor/bin/sail up`.
 You should now be able to see it in your browser at http://127.0.0.1
 
+## Prerequisites
+- PHP 8.3+
+- Docker
+
 ## NB
-No https has been configured for the purpose of this exercise 
+- No https has been configured for the purpose of this exercise
+- I will use Axios to feed React, but in all truth I shouldn't need to, it'd be faster to just use Laravel Blade
+- I have just noticed some duplicates, e.g. "The first Blender Open Movie from 2006" with an `isLive` status set to true and false respectively (ID's 7 and 8). I presume I have to d something clever here - working on it 
 
 ## License
 
