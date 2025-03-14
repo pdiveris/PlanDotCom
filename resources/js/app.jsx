@@ -1,5 +1,6 @@
 import './bootstrap';
 import { createRoot } from 'react-dom/client';
+
 import WelcomeGrid from "./components/WelcomeGrid.jsx";
 
 const props = {};
