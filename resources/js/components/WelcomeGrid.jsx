@@ -24,8 +24,11 @@ export default function WelcomeGrid() {
                         className='react-player'
                         url={video.videoUrl}
                         light={<img src={video.thumbnailUrl} alt='Thumbnail' />}
+                        controls={true}
+                        playing={true}
                         width='100%'
                         height='100%'
+                        playsinline={true}
                     />
                     <h1 className="text-white">{video.title}</h1>
                     <h2 className="text-white">{video.author}</h2>
