@@ -17,6 +17,9 @@ In addition, it makes use of [Docker](http://docker.io) through Laravel Sail
 Simply clone the rep into a folder, change dir to, e.g. `cd ./videogrid` and run `./vendor/bin/sail up`.
 You should now be able to see it in your browser at http://127.0.0.1
 
+### API
+You can access the videos API at `http://127.0.0.1/api/videos?q=himself` where q is your query string against title and/or description.
+
 ## Prerequisites
 - PHP 8.3+
 - Docker

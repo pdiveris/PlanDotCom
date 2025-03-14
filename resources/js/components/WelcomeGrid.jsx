@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import ReactPlayer from 'react-player'
 
 export default function WelcomeGrid() {
     const [videos, setVideos] = useState([]);

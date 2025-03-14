@@ -14,7 +14,6 @@ export default defineConfig({
             }),
             react(),
             tailwindcss(),
-//            require('@material-tailwind/html').withMT(), // Import and use withMT()
         ],
     }
 );
