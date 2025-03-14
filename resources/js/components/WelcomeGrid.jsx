@@ -24,7 +24,7 @@ export default function WelcomeGrid() {
                         className='react-player'
                         url={video.videoUrl}
                         light={<img src={video.thumbnailUrl} alt='Thumbnail' />}
-                        controls={true}
+                        controls={false}
                         playing={true}
                         width='100%'
                         height='100%'
