@@ -64,7 +64,7 @@ export default function WelcomeGrid() {
                             </h2>
                             <div className="mb-2 flex flex-wrap">
                                 <img className="w-10 h-10 rounded-full mr-4 mb-2"
-                                     src="/images/jonathan.jpg"
+                                     src="/images/avatar.jpg"
                                      alt="Avatar of Jonathan Reinink"
                                 />
                                 <h2 className="mb-2 font-bold">
