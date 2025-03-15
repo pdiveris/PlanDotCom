@@ -25,6 +25,8 @@ export default function WelcomeGrid() {
         video.currentTime = 0;
         video.playbackRate = 1;
         video.pause();
+        video.src = '';
+        video.removeAttribute("src");
     }
 
     let previewTimeout = null;
