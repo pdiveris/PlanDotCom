@@ -29,8 +29,8 @@ You can access the videos API at `http://127.0.0.1/api/videos?q=himself` where q
 ## NOTES
 - I originally set to use react-player. Because of the notes I thought that I'd have to customize the controls of the player, i.e. remove all controls 
 but the volume ones, so I swapped to native Video HTML5. This got eventually working, but after I realised that I didn't need to remove all controls.
-- Nevertheless, that was a god change as it allowed for hover/blur controls.
-- There is a Dark/Light switcher. It was added to learn the Tailwind CSS4 way of doing it. It's imperfect in the sense that I have nt created custom themes, just using the Tailwind CSS selectors. 
+- Nevertheless, that was a good change as it allowed for hover/blur controls.
+- There is a Dark/Light switcher. It was added to learn the Tailwind CSS4 way of doing it. It's imperfect in the sense that I have not created custom themes, just using the Tailwind CSS selectors. 
 Also,it won't store the preference to **localStore**. It means that if you reload the app, it will revert to light. 
 - No https has been configured for the purpose of this exercise.
 - I ~~will~~ use Axios to feed React, but in all truth I shouldn't need to, it'd be faster to just use Laravel Blade.
@@ -38,7 +38,7 @@ Also,it won't store the preference to **localStore**. It means that if you reloa
 
 ## KNOWN ISSUES
 - When hovering over using **Firefox**, if one moves to the Volume controls to enable sound and then leaves, the video stops. That's due to Mozilla's implementation of the Video element. I can think f a fix, but I've run out of time.
-- I don't like the `startPreview`, `endPreview` legacy JS code in the `.ts` file. They should be in a provider. However, I had issues getting this to work, and I'd run out of time. I can elaborate if we discuss ver a call. 
+- I don't like the `startPreview`, `endPreview` legacy JS code in the `.ts` file. They should be in a provider. However, I had issues getting this to work, and I'd run out of time. I can elaborate if we discuss over a call. 
 
 ## License
 
