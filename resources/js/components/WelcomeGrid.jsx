@@ -3,6 +3,8 @@ import React, {useState, useEffect} from 'react';
 export default function WelcomeGrid() {
     const [videos, setVideos] = useState([]);
 
+    let previewTimeout = null;
+
     useEffect(() => {
         fetch('/api/videos')
             .then((response) => response.json())
@@ -28,8 +30,6 @@ export default function WelcomeGrid() {
         video.src = '';
         video.removeAttribute("src");
     }
-
-    let previewTimeout = null;
 
     function videoOnEnter(video) {
         startPreview(video);
@@ -67,14 +67,14 @@ export default function WelcomeGrid() {
                             <div className="mb-2 flex flex-wrap">
                                 <img className="w-10 h-10 rounded-full mr-4 mb-2"
                                      src="/images/avatar.jpg"
-                                     alt="Avatar of Jonathan Reinink"
+                                     alt="Avatar"
                                 />
                                 <h2 className="mb-2 font-bold">
                                     {video.author}
                                 </h2>
                             </div>
                             <p className="text-md text-justify">
-                                {video.views} views<br />
+                                {video.views} views
                             </p>
                             <p className="text-md text-justify text-sm">
                                 Uploaded {video.uploadTime}
